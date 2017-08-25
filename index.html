@@ -19,9 +19,42 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>
     <body>
-        <div class="mdc-textfield">
-          <input type="text" id="my-textfield" class="mdc-textfield__input">
-          <label class="mdc-textfield__label" for="my-textfield">Hint text</label>
+        <div class="container">
+          <h1 class="mdc-typography--display2">Wage Calculator</h1>
+              <form>
+                <div class="group">      
+                  <input type="text" required>
+                  <span class="bar"></span>
+                  <label>Employee Name</label>
+                </div>
+
+                <div class="mdc-select" role="listbox" tabindex="0">
+                  <span class="mdc-select__selected-text">Vegetables</span>
+                  <div class="mdc-simple-menu mdc-select__menu">
+                    <ul class="mdc-list mdc-simple-menu__items">
+                      <li class="mdc-list-item" role="option" id="grains" tabindex="0">
+                        Bread, Cereal, Rice, and Pasta
+                      </li>
+                      <li class="mdc-list-item" role="option" aria-selected id="vegetables" tabindex="0">
+                        Vegetables
+                      </li>
+                      <li class="mdc-list-item" role="option" id="fruit" tabindex="0">
+                        Fruit
+                      </li>
+                      <li class="mdc-list-item" role="option" id="dairy" tabindex="0">
+                        Milk, Yogurt, and Cheese
+                      </li>
+                      <li class="mdc-list-item" role="option" id="meat" tabindex="0">
+                        Meat, Poultry, Fish, Dry Beans, Eggs, and Nuts
+                      </li>
+                      <li class="mdc-list-item" role="option" id="fats" tabindex="0">
+                        Fats, Oils, and Sweets
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </form>
         </div>
         
         
@@ -34,7 +67,17 @@
         
         <script src="node_modules/material-components-web/dist/material-components-web.js"></script>
         <script>mdc.autoInit()</script>
+        
+        <script>
+            import {MDCSelect} from 'mdc-select';
 
+            const select = new MDCSelect(document.querySelector('.mdc-select'));
+            select.listen('MDCSelect:change', () => {
+              alert(`Selected "${select.selectedOptions[0].textContent}" at index ${select.selectedIndex} ` +
+                    `with value "${select.value}"`);
+            });
+        </script>
+        
         <!-- jQuery -->
         <script src="js/jquery.js"></script>
 
