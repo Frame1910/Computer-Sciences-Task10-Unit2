@@ -6,7 +6,17 @@
 input {
     padding: 5px;
     border: 1px solid #303f9f;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
 }
 .checkBox {
     color: #303f9f;
+}
+p {
+    border: 1px solid #303f9f;
+    border-radius: 5px;
+    width: 20%;
+    padding: 5px;
+    margin: 30px;
 }

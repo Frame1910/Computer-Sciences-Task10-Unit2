@@ -17,38 +17,43 @@
     </head>
     <body>
         <div class="container">
-          <h1 class="mdc-typography--display2">Wage Calculator</h1>
+          <h1 class="mdc-typography--display2">Wage Calculator - Darren Meiring</h1>
               <form class="mdc-typography--subheading2">
-                <div class="group"> 
+                <div class="group"> <!-- item 1 -->
                  <label>Employee name:</label>     
                   <input type="text" id="name">
                 </div>
-                <div class="group">
-                   <label>Position:</label>
-                    <select id="position">
-                        <option value="Butcher">Butcher</option>
-                        <option value="Manager">Manager</option>
-                        <option value="Checkout">Checkout</option>
-                    </select>
+                <div class="group"> <!-- item 2 -->
+                   <label>Are you a Manager?</label>
+                    <input type="checkbox" id="position">
                   </div>
-                  <div class="group">
+                  <div class="group"> <!-- item 3 -->
                       <label>Days of the week worked:</label><br>
-                      <input type="checkbox" value="monday" id="monday" class="checkBox">Monday<br>
-                      <input type="checkbox" value="tuesday" id="tuesday" class="checkBox">Tuesday<br>
-                      <input type="checkbox" value="wednesday" id="wednesday" class="checkBox">Wednesday<br>
-                      <input type="checkbox" value="thursday" id="thursday" class="checkBox">Thursday<br>
-                      <input type="checkbox" value="friday" id="friday" class="checkBox">Friday<br>
-                      <input type="checkbox" value="saturday" id="saturday" class="checkBox">Saturday<br>
-                      <input type="checkbox" value="sunday" id="sunday" class="checkBox">Sunday<br>
+                      <input type="checkbox" id="monday" class="checkBox">Monday<br>
+                      <input type="checkbox" id="tuesday" class="checkBox">Tuesday<br>
+                      <input type="checkbox" id="wednesday" class="checkBox">Wednesday<br>
+                      <input type="checkbox" id="thursday" class="checkBox">Thursday<br>
+                      <input type="checkbox" id="friday" class="checkBox">Friday<br>
+                      <input type="checkbox" id="saturday" class="checkBox">Saturday<br>
+                      <input type="checkbox" id="sunday" class="checkBox">Sunday<br>
                   </div>
-                  <p id="daysWorked"></p>
-                  <p id="normalHours"></p>
-                  <p id="overtimeHours"></p>
-                  <p id="overtimeHours-2"></p>
-                  <div class="group">
+                  <p id="daysWorked">Days Worked</p> <!-- item 4 -->
+                  <p id="normalHours">Normal Hours</p> <!-- item 5 -->
+                  <p id="overtimeHours">Overtime Hours =<3 hours</p> <!-- item 6 -->
+                  <p id="overtimeHours-2">Overtime Hours >3 hours</p> <!-- item 7 -->
+                  <div class="group"> <!-- item 8 -->
                       <label>Saturday Hours (Extra $3 per hour): </label><br>
+                      <input id="saturdayNormal" type="number">
+                  </div>
+                  <div class="group"><!-- item 9 -->
+                      <label>Sunday and Holiday Normal Hours (Extra $4 per hour):</label><br>
                       <input type="number">
                   </div>
+                  <div class="group"><!-- item 10 -->
+                      <label>Sunday and Holiday Overtime Hours (Extra $4 per hour):</label><br>
+                      <input type="number">
+                  </div>
+                  <input type="button" value="Submit" onclick="manager()">
               </form>
         </div>
         
@@ -59,9 +64,6 @@
         
         
         
-        
-        <script src="node_modules/material-components-web/dist/material-components-web.js"></script>
-        <script>mdc.autoInit()</script>
         
         <script src="wage.js"></script>
     </body>
