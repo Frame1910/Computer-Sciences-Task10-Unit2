@@ -5,9 +5,6 @@
         <!-- Material Design Styling -->
         <link rel="stylesheet" href="node_modules/material-components-web/dist/material-components-web.css">
 
-        <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.css" rel="stylesheet">
-
         <!-- Custom CSS -->
         <link href="css/stylesheet.css" rel="stylesheet">
 
@@ -21,39 +18,37 @@
     <body>
         <div class="container">
           <h1 class="mdc-typography--display2">Wage Calculator</h1>
-              <form>
-                <div class="group">      
-                  <input type="text" required>
-                  <span class="bar"></span>
-                  <label>Employee Name</label>
+              <form class="mdc-typography--subheading2">
+                <div class="group"> 
+                 <label>Employee name:</label>     
+                  <input type="text" id="name">
                 </div>
-
-                <div class="mdc-select" role="listbox" tabindex="0">
-                  <span class="mdc-select__selected-text">Vegetables</span>
-                  <div class="mdc-simple-menu mdc-select__menu">
-                    <ul class="mdc-list mdc-simple-menu__items">
-                      <li class="mdc-list-item" role="option" id="grains" tabindex="0">
-                        Bread, Cereal, Rice, and Pasta
-                      </li>
-                      <li class="mdc-list-item" role="option" aria-selected id="vegetables" tabindex="0">
-                        Vegetables
-                      </li>
-                      <li class="mdc-list-item" role="option" id="fruit" tabindex="0">
-                        Fruit
-                      </li>
-                      <li class="mdc-list-item" role="option" id="dairy" tabindex="0">
-                        Milk, Yogurt, and Cheese
-                      </li>
-                      <li class="mdc-list-item" role="option" id="meat" tabindex="0">
-                        Meat, Poultry, Fish, Dry Beans, Eggs, and Nuts
-                      </li>
-                      <li class="mdc-list-item" role="option" id="fats" tabindex="0">
-                        Fats, Oils, and Sweets
-                      </li>
-                    </ul>
+                <div class="group">
+                   <label>Position:</label>
+                    <select id="position">
+                        <option value="Butcher">Butcher</option>
+                        <option value="Manager">Manager</option>
+                        <option value="Checkout">Checkout</option>
+                    </select>
                   </div>
-                </div>
-
+                  <div class="group">
+                      <label>Days of the week worked:</label><br>
+                      <input type="checkbox" value="monday" id="monday" class="checkBox">Monday<br>
+                      <input type="checkbox" value="tuesday" id="tuesday" class="checkBox">Tuesday<br>
+                      <input type="checkbox" value="wednesday" id="wednesday" class="checkBox">Wednesday<br>
+                      <input type="checkbox" value="thursday" id="thursday" class="checkBox">Thursday<br>
+                      <input type="checkbox" value="friday" id="friday" class="checkBox">Friday<br>
+                      <input type="checkbox" value="saturday" id="saturday" class="checkBox">Saturday<br>
+                      <input type="checkbox" value="sunday" id="sunday" class="checkBox">Sunday<br>
+                  </div>
+                  <p id="daysWorked"></p>
+                  <p id="normalHours"></p>
+                  <p id="overtimeHours"></p>
+                  <p id="overtimeHours-2"></p>
+                  <div class="group">
+                      <label>Saturday Hours (Extra $3 per hour): </label><br>
+                      <input type="number">
+                  </div>
               </form>
         </div>
         
@@ -68,24 +63,6 @@
         <script src="node_modules/material-components-web/dist/material-components-web.js"></script>
         <script>mdc.autoInit()</script>
         
-        <script>
-            import {MDCSelect} from 'mdc-select';
-
-            const select = new MDCSelect(document.querySelector('.mdc-select'));
-            select.listen('MDCSelect:change', () => {
-              alert(`Selected "${select.selectedOptions[0].textContent}" at index ${select.selectedIndex} ` +
-                    `with value "${select.value}"`);
-            });
-        </script>
-        
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
-
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
-
-        <!-- Scrolling Nav JavaScript -->
-        <script src="js/jquery.easing.min.js"></script>
-        <script src="js/scrolling-nav.js"></script>
+        <script src="wage.js"></script>
     </body>
 </html>
