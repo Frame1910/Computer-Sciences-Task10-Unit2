@@ -9,6 +9,9 @@ function manager() {
         console.log(payRate);
     }
 }
-function daysWorked() {
-    
+var checkedValue = 0;
+function daysWorked(dayNumber) {
+    if (document.getElementById(dayNumber.toString()).checked == true) {
+        checkedValue = checkedValue + 1
+    }
 }
