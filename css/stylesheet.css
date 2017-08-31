@@ -1,19 +1,45 @@
-@import "material-components-web/material-components-web";
-
+body {
+    background: #f5f5f5;
+}
 .group {
     margin: 30px;
+    border: 2px solid white;
+    border-radius: 2px;
+    background: white;
+    width: 25%;
+    box-shadow: 3px 3px 5px #cfcfcf;
+    padding: 10px;
 }
 input {
     padding: 5px;
-    border: 1px solid #303f9f;
-    border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    border: none;
+    border-bottom: 2px solid black;
+}
+input:hover, input:focus {
+    border-bottom: 2px solid #303f9f;
+    outline-width: 0;
 }
 p {
     border: 1px solid #303f9f;
     border-radius: 5px;
-    width: 20%;
     padding: 5px;
     margin: 30px;
+}
+.submit {
+    width: 100px;
+    margin: 30px;
+    background: #f5f5f5;
+    transition: background 0.2s ease-in-out;
+    padding: 5px;
+    text-transform: uppercase;
+    border: 2px solid #303f9f;
+    border-radius: 0px;
+    color: #303f9f;
+}
+.submit:hover {
+    background: #303f9f;
+    color: white;
+}
+.inputfloat {
+    float: right;
 }
