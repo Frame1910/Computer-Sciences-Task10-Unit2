@@ -39,7 +39,7 @@ function weekDayOvertimeSalary() {
 
 var weekDayOvertimeHours2 = 0;
 var weekDayOvertimeRate2 = 1.45;
-var weekDayOvertimePay2 = 0
+var weekDayOvertimePay2 = 0;
 
 function weekDayOvertimeSalary2() {
     console.log(payRate);
@@ -56,12 +56,4 @@ function satSalary() {
     var satHours = document.getElementById("saturdayNormal").value;
     var satpay = satHours * payRate + 3;
     document.getElementById("satPay").innerHTML = "$" + satpay;
-}
-
-var sunHolNormalHours = 0;
-var sunHolPay = 0;
-
-function sunHolSalary() {
-    console.log(payRate);
-    var sunHolHours = 
 }
