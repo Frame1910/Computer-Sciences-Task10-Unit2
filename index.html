@@ -38,30 +38,39 @@
                       <input type="checkbox" id="7" onchange="daysWorked(7)">Sunday<br>
                   </div>
                   <div class="group">
-                     <label>Normal Hours Worked:</label>
-                      <input id="normalHoursTotal" type="number" onchange="normalSalary()">
+                      <label>Monday to Friday</label>
+                      <br>
+                     <input id="normalHoursTotal" type="number" onchange="normalSalary()" max="9" placeholder="Normal Hours Worked">
+                      <br>
+                      <br>
+                     <input id="weekDayOvertime" type="number" onchange="weekDayOvertimeSalary()" max="3" placeholder="Overtime: Max 3">
+                      <br>
+                      <br>
+                      <input id="weekDayOvertime2" type="number" onchange="weekDayOvertimeSalary2()" min="4" placeholder="Overtime: Min 4">
                   </div>
                   <div class="group"> <!-- item 8 -->
                       <label>Saturday Hours (Extra $3 per hour): </label><br>
-                      <input id="saturdayNormal" type="number">
+                      <input id="saturdayNormal" type="number" max="9" placeholder="Normal Hours: Max 9" onchange="satSalary()">
                   </div>
-                  <div class="group"><!-- item 9 -->
-                      <label>Sunday and Holiday Normal Hours (Extra $4 per hour):</label><br>
-                      <input id="sunholNormal" type="number">
-                  </div>
-                  <div class="group"><!-- item 10 -->
-                      <label>Sunday and Holiday Overtime Hours (Extra $4 per hour):</label><br>
-                      <input id="sunholOver" type="number">
+                  <div class="group">
+                      <label>Sunday and Holiday</label>
+                      <br>
+                      <input id="sunholNormal" type="number" placeholder="Normal Hours Add $4" max="9"><!-- item 9 -->
+                      <br>
+                      <br>
+                      <input id="sunholOver" type="number" placeholder="Overtime Hours"><!-- item 10 -->
                   </div>
                   <input type="button" value="Submit" class="submit mdc-typography--subheading2">
                   <div class="group col-md-6">
                       <label>No. of days worked</label>
                       <p id="totalDaysWorked">0</p> <!-- item 4 -->
-                      <label>Normal Pay</label>
+                      <label>Weekday Normal Pay</label>
                       <p id="normalPay">0</p> <!-- item 5 -->
-                      <label>Overtime Pay </label>
-                      <p id="overtimeHours">Overtime Hours =<3 hours</p> <!-- item 6 -->
-                      <p id="overtimeHours-2">Overtime Hours >3 hours</p> <!-- item 7 -->
+                      <label>Weekday Overtime Pay</label>
+                      <p id="weekDayOvertimePay">0</p> <!-- item 6 -->
+                      <p id="weekDayOvertimePay2">0</p> <!-- item 7 -->
+                      <label>Saturday Pay</label>
+                      <p id="satPay">0</p>
                   </div>
               </form>
         </div>
