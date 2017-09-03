@@ -7,14 +7,16 @@ function manager() {
     }
 }
 
+
 var normalPay = 0;
 var normalHours = 0;
 function normalSalary() {
     console.log(payRate);
     var normalHours = document.getElementById("normalHoursTotal").value;
-    var normalPay = normalHours * payRate;
+    window.normalPay = normalHours * payRate;
     document.getElementById("normalPay").innerHTML = "$" + normalPay;
 }
+
 
 var checkedValue = 0;
 function daysWorked(dayNumber) {
@@ -26,6 +28,7 @@ function daysWorked(dayNumber) {
     document.getElementById('totalDaysWorked').innerHTML = checkedValue.toString();
 }
 
+
 var weekDayOvertimeHours = 0;
 var weekDayOvertimeRate = 1.25;
 var weekDayOvertimePay = 0;
@@ -33,9 +36,10 @@ var weekDayOvertimePay = 0;
 function weekDayOvertimeSalary() {
     console.log(payRate);
     var weekDayOvertimeHours = document.getElementById("weekDayOvertime").value;
-    var weekDayOvertimePay = weekDayOvertimeHours * payRate * weekDayOvertimeRate;
+    window.weekDayOvertimePay = weekDayOvertimeHours * payRate * weekDayOvertimeRate;
     document.getElementById("weekDayOvertimePay").innerHTML = "$" + weekDayOvertimePay;
 }
+
 
 var weekDayOvertimeHours2 = 0;
 var weekDayOvertimeRate2 = 1.45;
@@ -44,9 +48,10 @@ var weekDayOvertimePay2 = 0;
 function weekDayOvertimeSalary2() {
     console.log(payRate);
     var weekDayOvertimeHours2 = document.getElementById("weekDayOvertime2").value;
-    var weekDayOvertimePay2 = weekDayOvertimeHours2 * payRate * weekDayOvertimeRate2;
+    window.weekDayOvertimePay2 = weekDayOvertimeHours2 * payRate * weekDayOvertimeRate2;
     document.getElementById("weekDayOvertimePay2").innerHTML = "$" + weekDayOvertimePay2;
 }
+
 
 var satHours = 0;
 var satPay = 0;
@@ -54,6 +59,58 @@ var satPay = 0;
 function satSalary() {
     console.log(payRate);
     var satHours = document.getElementById("saturdayNormal").value;
-    var satpay = satHours * payRate + 3;
-    document.getElementById("satPay").innerHTML = "$" + satpay;
+    if (document.getElementById("saturdayNormal").value > 0) {
+        window.satPay = satHours * payRate + 3;
+    } else {
+        window.satPay = 0;
+    }
+    document.getElementById("satPay").innerHTML = "$" + satPay;
 }
+
+
+var sunHolHours = 0;
+var sunHolPay = 0;
+
+function sunHolNormalPay() {
+    console.log(payRate);
+    var sunHolHours = document.getElementById("sunHolNormal").value;
+    if (document.getElementById("sunHolNormal").value > 0) {
+        window.sunHolPay = sunHolHours * payRate + 4;
+    } else {
+        window.sunHolPay = 0;
+    }
+    document.getElementById("sunHolNormalPay").innerHTML = "$" + sunHolPay;
+} 
+
+
+var sunHolOvertimeHours = 0;
+var sunHolOvertimePay = 0;
+
+function sunHolOvertimeSalary() {
+    console.log(payRate);
+    var sunHolOvertimeHours = document.getElementById("sunHolOver").value;
+    if (document.getElementById("sunHolOver").value > 0) {
+        window.sunHolOvertimePay = sunHolPay * 1.5;
+    } else {
+        window.sunHolOvertimePay = 0;
+    }
+    console.log(sunHolOvertimePay);
+    document.getElementById("sunHolOvertimePay").innerHTML = "$" + sunHolOvertimePay;
+}
+
+
+var totalWage = 0;
+
+function finalWage() {
+    var totalWage = normalPay + weekDayOvertimePay + weekDayOvertimePay2 + satPay + sunHolPay + sunHolOvertimePay;
+    document.getElementById("totalWage").innerHTML = "$" + totalWage;
+}
+
+
+
+
+
+
+
+
+

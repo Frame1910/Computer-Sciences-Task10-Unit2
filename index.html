@@ -18,7 +18,7 @@
     <body>
         <div class="container">
           <h1 class="mdc-typography--display2">Wage Calculator - Darren Meiring</h1>
-              <form class="mdc-typography--subheading2">
+              <form class="mdc-typography--subheading2" onchange="finalWage()">
                 <div class="group"> <!-- item 1 -->
                  <label>Employee name:</label>     
                   <input type="text" id="name">
@@ -46,19 +46,19 @@
                      <input id="weekDayOvertime" type="number" onchange="weekDayOvertimeSalary()" max="3" placeholder="Overtime: Max 3">
                       <br>
                       <br>
-                      <input id="weekDayOvertime2" type="number" onchange="weekDayOvertimeSalary2()" min="4" placeholder="Overtime: Min 4">
+                      <input id="weekDayOvertime2" type="number" onchange="weekDayOvertimeSalary2()" min="4" placeholder="Overtime: Min 4">`
                   </div>
                   <div class="group"> <!-- item 8 -->
                       <label>Saturday Hours (Extra $3 per hour): </label><br>
-                      <input id="saturdayNormal" type="number" max="9" placeholder="Normal Hours: Max 9" onchange="satSalary()">
+                      <input id="saturdayNormal" type="number" max="9" placeholder="Normal Hours: Max 9" onchange="satSalary()">`
                   </div>
                   <div class="group">
                       <label>Sunday and Holiday</label>
                       <br>
-                      <input id="sunholNormal" type="number" placeholder="Normal Hours Add $4" max="9"><!-- item 9 -->
+                      <input id="sunHolNormal" type="number" placeholder="Normal Hours Add $4" max="9" onchange="sunHolNormalPay()"><!-- item 9 -->
                       <br>
                       <br>
-                      <input id="sunholOver" type="number" placeholder="Overtime Hours"><!-- item 10 -->
+                      <input id="sunHolOver" type="number" placeholder="Overtime Hours" onchange="sunHolOvertimeSalary()"><!-- item 10 -->
                   </div>
                   <input type="button" value="Submit" class="submit mdc-typography--subheading2">
                   <div class="group col-md-6">
@@ -71,6 +71,13 @@
                       <p id="weekDayOvertimePay2">0</p> <!-- item 7 -->
                       <label>Saturday Pay</label>
                       <p id="satPay">0</p>
+                      <label>Sunday and Holiday Normal Pay</label>
+                      <p id="sunHolNormalPay">0</p>
+                      <label>Sunday and Holiday Overtime Pay</label>
+                      <p id="sunHolOvertimePay">0</p>
+                      <br>
+                      <label>Total Wage</label>
+                      <p id="totalWage">0</p>
                   </div>
               </form>
         </div>
