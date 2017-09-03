@@ -90,7 +90,7 @@ function sunHolOvertimeSalary() {
     console.log(payRate);
     var sunHolOvertimeHours = document.getElementById("sunHolOver").value;
     if (document.getElementById("sunHolOver").value > 0) {
-        window.sunHolOvertimePay = sunHolPay * 1.5;
+        window.sunHolOvertimePay = (sunHolOvertimeHours * payRate + 4) * 1.5;
     } else {
         window.sunHolOvertimePay = 0;
     }
