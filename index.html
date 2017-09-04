@@ -14,9 +14,9 @@
 
         <!--Google Mad Fonts -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
     </head>
     <body>
-        <div class="container">
           <h1 class="mdc-typography--display2">Wage Calculator - Darren Meiring</h1>
               <form class="mdc-typography--subheading2" onchange="finalWage()">
                 <div class="group"> <!-- item 1 -->
@@ -60,29 +60,27 @@
                       <br>
                       <input id="sunHolOver" type="number" placeholder="Overtime Hours" onchange="sunHolOvertimeSalary()"><!-- item 10 -->
                   </div>
-                  <input type="button" value="Submit" class="submit mdc-typography--subheading2">
-                  <div class="group col-md-6">
-                      <label>Employee Name</label>
-                      <p id="printEmployeeName">Employee Name</p>
-                      <label>No. of days worked</label>
-                      <p id="totalDaysWorked">0</p> <!-- item 4 -->
-                      <label>Weekday Normal Pay</label>
-                      <p id="normalPay">0</p> <!-- item 5 -->
-                      <label>Weekday Overtime Pay</label>
-                      <p id="weekDayOvertimePay">0</p> <!-- item 6 -->
-                      <p id="weekDayOvertimePay2">0</p> <!-- item 7 -->
-                      <label>Saturday Pay</label>
-                      <p id="satPay">0</p>
-                      <label>Sunday and Holiday Normal Pay</label>
-                      <p id="sunHolNormalPay">0</p>
-                      <label>Sunday and Holiday Overtime Pay</label>
-                      <p id="sunHolOvertimePay">0</p>
-                      <br>
-                      <label>Total Wage</label>
-                      <p id="totalWage">0</p>
-                  </div>
-              </form>
-        </div>
+                  </form>
+                      <div class="receiptGroup mdc-typography--subheading2">
+                          <label>Employee Name</label>
+                          <p id="printEmployeeName">Employee Name</p>
+                          <label>No. of days worked</label>
+                          <p id="totalDaysWorked">0</p> <!-- item 4 -->
+                          <label>Weekday Normal Pay</label>
+                          <p id="normalPay">0</p> <!-- item 5 -->
+                          <label>Weekday Overtime Pay</label>
+                          <p id="weekDayOvertimePay">0</p> <!-- item 6 -->
+                          <p id="weekDayOvertimePay2">0</p> <!-- item 7 -->
+                          <label>Saturday Pay</label>
+                          <p id="satPay">0</p>
+                          <label>Sunday and Holiday Normal Pay</label>
+                          <p id="sunHolNormalPay">0</p>
+                          <label>Sunday and Holiday Overtime Pay</label>
+                          <p id="sunHolOvertimePay">0</p>
+                          <br>
+                          <label>Total Wage</label>
+                          <p id="totalWage">0</p>
+                      </div>
         <script src="wage.js"></script>
     </body>
 </html>
