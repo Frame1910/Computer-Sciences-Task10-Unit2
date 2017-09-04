@@ -106,11 +106,10 @@ function finalWage() {
     document.getElementById("totalWage").innerHTML = "$" + totalWage;
 }
 
+var employeeName = "";
 
-
-
-
-
-
-
-
+function printName() {
+    var employeeName = document.getElementById("employeeName").value;
+    console.log(employeeName);
+    document.getElementById("printEmployeeName").innerHTML = employeeName;
+}
