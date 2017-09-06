@@ -24,115 +24,167 @@
                   <input type="text" id="employeeName" onchange="printName()">
                 </div>
                 <div class="group"> <!-- item 2 -->
-                   <label>Are you a Manager?</label>
-                    <input type="checkbox" id="position" onchange="manager()">
+                   <div class="mdc-form-field">
+                      <div class="mdc-checkbox">
+                        <input type="checkbox"
+                               id="position"
+                               class="mdc-checkbox__native-control" onchange="manager()"/>
+                        <div class="mdc-checkbox__background">
+                          <svg class="mdc-checkbox__checkmark"
+                               viewBox="0 0 24 24">
+                            <path class="mdc-checkbox__checkmark__path"
+                                  fill="none"
+                                  stroke="white"
+                                  d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                          </svg>
+                          <div class="mdc-checkbox__mixedmark"></div>
+                        </div>
+                      </div>
+
+                      <label for="my-checkbox">Are you a Manager?</label>
+                    </div>
+                    <br>
                   </div>
                   <div class="group"> <!-- item 3 -->
-                      <label>Days of the week worked:</label><br>
+                      <div class="mdc-form-field">
                       <div class="mdc-checkbox">
-                          <input type="checkbox"
-                                 class="mdc-checkbox__native-control" id="1" onchange="daysWorked(1)"/>
-                          <div class="mdc-checkbox__background">
-                            <svg class="mdc-checkbox__checkmark"
-                                 viewBox="0 0 24 24">
-                              <path class="mdc-checkbox__checkmark__path"
-                                    fill="none"
-                                    stroke="white"
-                                    d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
-                            </svg>
-                            <div class="mdc-checkbox__mixedmark"></div>
-                          </div>
+                        <input type="checkbox"
+                               id="1"
+                               class="mdc-checkbox__native-control" onchange="daysWorked(1)"/>
+                        <div class="mdc-checkbox__background">
+                          <svg class="mdc-checkbox__checkmark"
+                               viewBox="0 0 24 24">
+                            <path class="mdc-checkbox__checkmark__path"
+                                  fill="none"
+                                  stroke="white"
+                                  d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                          </svg>
+                          <div class="mdc-checkbox__mixedmark"></div>
                         </div>
-                      <br>
+                      </div>
+
+                      <label for="my-checkbox">Monday</label>
+                    </div>
+                    <br>
+                    <div class="mdc-form-field">
                       <div class="mdc-checkbox">
-                          <input type="checkbox"
-                                 class="mdc-checkbox__native-control" id="2" onchange="daysWorked(2)"/>
-                          <div class="mdc-checkbox__background">
-                            <svg class="mdc-checkbox__checkmark"
-                                 viewBox="0 0 24 24">
-                              <path class="mdc-checkbox__checkmark__path"
-                                    fill="none"
-                                    stroke="white"
-                                    d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
-                            </svg>
-                            <div class="mdc-checkbox__mixedmark"></div>
-                          </div>
+                        <input type="checkbox"
+                               id="2"
+                               class="mdc-checkbox__native-control" onchange="daysWorked(2)"/>
+                        <div class="mdc-checkbox__background">
+                          <svg class="mdc-checkbox__checkmark"
+                               viewBox="0 0 24 24">
+                            <path class="mdc-checkbox__checkmark__path"
+                                  fill="none"
+                                  stroke="white"
+                                  d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                          </svg>
+                          <div class="mdc-checkbox__mixedmark"></div>
                         </div>
-                      <br>
+                      </div>
+
+                      <label for="my-checkbox">Tuesday</label>
+                    </div>
+                    <br>
+                    <div class="mdc-form-field">
                       <div class="mdc-checkbox">
-                          <input type="checkbox"
-                                 class="mdc-checkbox__native-control" id="3" onchange="daysWorked(3)"/>
-                          <div class="mdc-checkbox__background">
-                            <svg class="mdc-checkbox__checkmark"
-                                 viewBox="0 0 24 24">
-                              <path class="mdc-checkbox__checkmark__path"
-                                    fill="none"
-                                    stroke="white"
-                                    d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
-                            </svg>
-                            <div class="mdc-checkbox__mixedmark"></div>
-                          </div>
+                        <input type="checkbox"
+                               id="3"
+                               class="mdc-checkbox__native-control" onchange="daysWorked(3)"/>
+                        <div class="mdc-checkbox__background">
+                          <svg class="mdc-checkbox__checkmark"
+                               viewBox="0 0 24 24">
+                            <path class="mdc-checkbox__checkmark__path"
+                                  fill="none"
+                                  stroke="white"
+                                  d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                          </svg>
+                          <div class="mdc-checkbox__mixedmark"></div>
                         </div>
-                      <br>
+                      </div>
+
+                      <label for="my-checkbox">Wednesday</label>
+                    </div>
+                    <br>
+                    <div class="mdc-form-field">
                       <div class="mdc-checkbox">
-                          <input type="checkbox"
-                                 class="mdc-checkbox__native-control" id="4" onchange="daysWorked(4)"/>
-                          <div class="mdc-checkbox__background">
-                            <svg class="mdc-checkbox__checkmark"
-                                 viewBox="0 0 24 24">
-                              <path class="mdc-checkbox__checkmark__path"
-                                    fill="none"
-                                    stroke="white"
-                                    d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
-                            </svg>
-                            <div class="mdc-checkbox__mixedmark"></div>
-                          </div>
+                        <input type="checkbox"
+                               id="4"
+                               class="mdc-checkbox__native-control" onchange="daysWorked(4)"/>
+                        <div class="mdc-checkbox__background">
+                          <svg class="mdc-checkbox__checkmark"
+                               viewBox="0 0 24 24">
+                            <path class="mdc-checkbox__checkmark__path"
+                                  fill="none"
+                                  stroke="white"
+                                  d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                          </svg>
+                          <div class="mdc-checkbox__mixedmark"></div>
                         </div>
-                      <br>
+                      </div>
+
+                      <label for="my-checkbox">Thursday</label>
+                    </div>
+                    <br>
+                    <div class="mdc-form-field">
                       <div class="mdc-checkbox">
-                          <input type="checkbox"
-                                 class="mdc-checkbox__native-control" id="5" onchange="daysWorked(5)"/>
-                          <div class="mdc-checkbox__background">
-                            <svg class="mdc-checkbox__checkmark"
-                                 viewBox="0 0 24 24">
-                              <path class="mdc-checkbox__checkmark__path"
-                                    fill="none"
-                                    stroke="white"
-                                    d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
-                            </svg>
-                            <div class="mdc-checkbox__mixedmark"></div>
-                          </div>
+                        <input type="checkbox"
+                               id="5"
+                               class="mdc-checkbox__native-control" onchange="daysWorked(5)"/>
+                        <div class="mdc-checkbox__background">
+                          <svg class="mdc-checkbox__checkmark"
+                               viewBox="0 0 24 24">
+                            <path class="mdc-checkbox__checkmark__path"
+                                  fill="none"
+                                  stroke="white"
+                                  d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                          </svg>
+                          <div class="mdc-checkbox__mixedmark"></div>
                         </div>
-                      <br>
+                      </div>
+
+                      <label for="my-checkbox">Friday</label>
+                    </div>
+                    <br>
+                    <div class="mdc-form-field">
                       <div class="mdc-checkbox">
-                          <input type="checkbox"
-                                 class="mdc-checkbox__native-control" id="6" onchange="daysWorked(6)"/>
-                          <div class="mdc-checkbox__background">
-                            <svg class="mdc-checkbox__checkmark"
-                                 viewBox="0 0 24 24">
-                              <path class="mdc-checkbox__checkmark__path"
-                                    fill="none"
-                                    stroke="white"
-                                    d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
-                            </svg>
-                            <div class="mdc-checkbox__mixedmark"></div>
-                          </div>
+                        <input type="checkbox"
+                               id="6"
+                               class="mdc-checkbox__native-control" onchange="daysWorked(6)"/>
+                        <div class="mdc-checkbox__background">
+                          <svg class="mdc-checkbox__checkmark"
+                               viewBox="0 0 24 24">
+                            <path class="mdc-checkbox__checkmark__path"
+                                  fill="none"
+                                  stroke="white"
+                                  d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                          </svg>
+                          <div class="mdc-checkbox__mixedmark"></div>
                         </div>
-                      <br>
+                      </div>
+
+                      <label for="my-checkbox">Saturday</label>
+                    </div>
+                    <br>
+                    <div class="mdc-form-field">
                       <div class="mdc-checkbox">
-                          <input type="checkbox"
-                                 class="mdc-checkbox__native-control" id="7" onchange="daysWorked(7)"/>
-                          <div class="mdc-checkbox__background">
-                            <svg class="mdc-checkbox__checkmark"
-                                 viewBox="0 0 24 24">
-                              <path class="mdc-checkbox__checkmark__path"
-                                    fill="none"
-                                    stroke="white"
-                                    d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
-                            </svg>
-                            <div class="mdc-checkbox__mixedmark"></div>
-                          </div>
+                        <input type="checkbox"
+                               id="7"
+                               class="mdc-checkbox__native-control" onchange="daysWorked(7)"/>
+                        <div class="mdc-checkbox__background">
+                          <svg class="mdc-checkbox__checkmark"
+                               viewBox="0 0 24 24">
+                            <path class="mdc-checkbox__checkmark__path"
+                                  fill="none"
+                                  stroke="white"
+                                  d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                          </svg>
+                          <div class="mdc-checkbox__mixedmark"></div>
                         </div>
+                      </div>
+
+                      <label for="my-checkbox">Sunday</label>
+                    </div>
                   </div>
                   <div class="group">
                       <label>Monday to Friday</label>
