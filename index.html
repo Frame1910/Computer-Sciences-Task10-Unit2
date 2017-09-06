@@ -19,10 +19,10 @@
     <body>
           <h1 class="mdc-typography--display2">Wage Calculator - Darren Meiring</h1>
               <form class="mdc-typography--subheading2" onchange="finalWage()">
-                <div class="group"> <!-- item 1 -->
-                 <label>Employee name:</label>     
-                  <input type="text" id="employeeName" onchange="printName()">
-                </div>
+                <div class="group"> <!-- item 1 -->    
+                  <input type="text" id="employeeName" onchange="printName()" placeholder="Employee Name" class="input">
+                  <span class="underline"></span>
+                 </div>
                 <div class="group"> <!-- item 2 -->
                    <div class="mdc-form-field">
                       <div class="mdc-checkbox">
@@ -189,25 +189,31 @@
                   <div class="group">
                       <label>Monday to Friday</label>
                       <br>
-                     <input id="normalHoursTotal" type="number" onchange="normalSalary()" max="9" placeholder="Normal Hours Worked">
+                     <input id="normalHoursTotal" type="number" onchange="normalSalary()" max="9" placeholder="Normal Hours Worked" class="input">
+                     <span class="underline"></span>
                       <br>
                       <br>
-                     <input id="weekDayOvertime" type="number" onchange="weekDayOvertimeSalary()" max="3" placeholder="Overtime: Max 3">
+                     <input id="weekDayOvertime" type="number" onchange="weekDayOvertimeSalary()" max="3" placeholder="Overtime: Max 3" class="input">
+                     <span class="underline"></span>
                       <br>
                       <br>
-                      <input id="weekDayOvertime2" type="number" onchange="weekDayOvertimeSalary2()" min="4" placeholder="Overtime: Min 4">`
+                      <input id="weekDayOvertime2" type="number" onchange="weekDayOvertimeSalary2()" min="4" placeholder="Overtime: Min 4" class="input">
+                      <span class="underline"></span>
                   </div>
                   <div class="group"> <!-- item 8 -->
                       <label>Saturday Hours (Extra $3 per hour): </label><br>
-                      <input id="saturdayNormal" type="number" max="9" placeholder="Normal Hours: Max 9" onchange="satSalary()">`
+                      <input id="saturdayNormal" type="number" max="9" placeholder="Normal Hours: Max 9" onchange="satSalary()" class="input">
+                      <span class="underline"></span>
                   </div>
                   <div class="group">
                       <label>Sunday and Holiday</label>
                       <br>
-                      <input id="sunHolNormal" type="number" placeholder="Normal Hours Add $4" max="9" onchange="sunHolNormalPay()"><!-- item 9 -->
+                      <input id="sunHolNormal" type="number" placeholder="Normal Hours Add $4" max="9" onchange="sunHolNormalPay()" class="input"><!-- item 9 -->
+                      <span class="underline"></span>
                       <br>
                       <br>
-                      <input id="sunHolOver" type="number" placeholder="Overtime Hours" onchange="sunHolOvertimeSalary()"><!-- item 10 -->
+                      <input id="sunHolOver" type="number" placeholder="Overtime Hours" onchange="sunHolOvertimeSalary()" class="input"><!-- item 10 -->
+                      <span class="underline"></span>
                   </div>
                   </form>
                       <div class="receiptGroup mdc-typography--subheading2">

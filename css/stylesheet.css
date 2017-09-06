@@ -14,21 +14,67 @@ form {
     box-shadow: 3px 3px 5px #cfcfcf;
     padding: 10px;
 }
-input {
-    padding: 10px;
-    border: none;
-    border-bottom: 2px solid black;
-    font-size: 15px;
+.wrapper {
+  background-color: #FFF;
+  border-radius: 2px;
+  box-shadow: 0px 2px 1px 0px #DDD;
+  box-sizing: border-box;
+  height: 300px;
+  left: 50%;
+  margin: -150px 0 0 -150px;
+  position: absolute;
+  top: 50%;
+  width: 300px;
 }
+
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #CCC;
+  color: black;
+  box-sizing: border-box;
+  font-size: 18px;
+  padding: 10px;
+  position: relative;
+  width: 275px;
+
+  &:focus {
+    outline: none;    
+  }
+}
+
+input::-webkit-input-placeholder {
+  color: #AAA;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: #303f9f;
+}
+
+.input:focus+.underline {
+  transform: scale(1);
+}
+
+.underline {
+  background-color: #303f9f;
+  display: inline-block;
+  height: 2px;
+  margin-top: -4px;
+  position: absolute;
+  left: 50px;
+  top: 143px;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+  width: 275px;
+}
+
 p {
     border: 1px solid #303f9f;
     border-radius: 5px;
     padding: 5px;
     margin: 30px;
-}
-.submit:hover {
-    background: #303f9f;
-    color: white;
 }
 .inputfloat {
     float: right;
@@ -45,4 +91,7 @@ p {
     box-shadow: 3px 3px 5px #cfcfcf;
     padding: 10px;
     width: 40%;
+}
+*:focus {
+    outline: none;
 }
