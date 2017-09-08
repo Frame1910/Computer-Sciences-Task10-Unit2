@@ -15,30 +15,40 @@ form {
     padding: 10px;
 }
 .wrapper {
-    padding: 5px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
 }
 .inputText {
     width: 200px;
-    display: inline-block; 
     height: 35px;
     padding: 7px;
     border: none;
     background-color: white;
-    transition: background 0.2s ease-in-out;
-    border: 1px solid white;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    transition: border 0.2s ease-in-out;
+    
 }  
-.inputText:hover, .inputText:focus {
-    background-color: #cfcfcf;
-    border: 1px solid #cfcfcf;
+.label {
+    padding-left: 7px;
+    order: -1;
+    transition: all 0.2s ease-in-out;
+    transform: translateY(29px);
+    pointer-events: none;
+}
+.inputText:focus + .label {
+    transform: translateY(-2px);
+    color: #303f9f;
+    font-size: 14px;
+    font-weight: 500;
+}
+.inputText:focus + .label + span {
+    background: #303f9f;
 }
 span {
     height: 2px;
     width: 200px;
     background-color: black;
     display: block;
+    transition: all 0.2s ease-in-out;
 }
 span:hover {
     transform: translateY(50px;)
