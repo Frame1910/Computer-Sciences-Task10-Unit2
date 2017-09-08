@@ -22,8 +22,27 @@ form {
     display: inline-block; 
     height: 35px;
     padding: 7px;
-    border-bottom: 2px solid
-}    
+    border: none;
+    background-color: white;
+    transition: background 0.2s ease-in-out;
+    border: 1px solid white;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    transition: border 0.2s ease-in-out;
+}  
+.inputText:hover, .inputText:focus {
+    background-color: #cfcfcf;
+    border: 1px solid #cfcfcf;
+}
+span {
+    height: 2px;
+    width: 200px;
+    background-color: black;
+    display: block;
+}
+span:hover {
+    transform: translateY(50px;)
+}
 p {
     border: 1px solid #303f9f;
     border-radius: 5px;
