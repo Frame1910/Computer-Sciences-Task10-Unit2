@@ -22,7 +22,7 @@
                 <div class="group"> <!-- item 1 -->  
                 <label class="mdc-typography--title">Basic Information</label>
                  <div class="wrapper">  
-                  <input type="text" id="employeeName" onchange="printName()" class="inputText mdc-typography--subheading2">
+                  <input type="text" id="employeeName" onchange="printName()" class="inputText mdc-typography--subheading2" required>
                   <label class="label" for="employeeName">Employee Name</label>
                   <span class="underline"></span>
                  </div>
@@ -194,17 +194,17 @@
                       <label class="mdc-typography--title">Monday to Friday</label>
                       <br>
                       <div class="wrapper">
-                         <input id="normalHoursTotal" type="number" onchange="normalSalary()" max="9" class="inputText mdc-typography--subheading2">
+                         <input id="normalHoursTotal" type="number" onchange="normalSalary()" max="9" class="inputText mdc-typography--subheading2" required>
                          <label class="label">Normal Hours Worked</label>
                          <span class="underline"></span>
                       </div>
                       <div class="wrapper">
-                         <input id="weekDayOvertime" type="number" onchange="weekDayOvertimeSalary()" max="3" class="inputText mdc-typography--subheading2">
+                         <input id="weekDayOvertime" type="number" onchange="weekDayOvertimeSalary()" max="3" class="inputText mdc-typography--subheading2" required>
                          <label class="label">Overtime: Max 3</label>
                          <span class="underline"></span>
                       </div>
                       <div class="wrapper">
-                          <input id="weekDayOvertime2" type="number" onchange="weekDayOvertimeSalary2()" min="4" class="inputText mdc-typography--subheading2">
+                          <input id="weekDayOvertime2" type="number" onchange="weekDayOvertimeSalary2()" min="4" class="inputText mdc-typography--subheading2" required>
                           <label class="label">Overtime: Min 4</label>
                           <span class="underline"></span>
                       </div>
@@ -212,7 +212,7 @@
                   <div class="group"> <!-- item 8 -->
                       <label class="mdc-typography--title">Saturday Hours (Extra $3 per hour): </label><br>
                       <div class="wrapper">
-                          <input id="saturdayNormal" type="number" max="9" onchange="satSalary()" class="inputText mdc-typography--subheading2">
+                          <input id="saturdayNormal" type="number" max="9" onchange="satSalary()" class="inputText mdc-typography--subheading2" required>
                           <label class="label">Normal Hours: Max 9</label>
                           <span class="underline"></span>
                       </div>
@@ -221,18 +221,19 @@
                       <label class="mdc-typography--title">Sunday and Holiday</label>
                       <br>
                       <div class="wrapper">
-                          <input id="sunHolNormal" type="number" max="9" onchange="sunHolNormalPay()" class="inputText mdc-typography--subheading2"><!-- item 9 -->
+                          <input id="sunHolNormal" type="number" max="9" onchange="sunHolNormalPay()" class="inputText mdc-typography--subheading2" required><!-- item 9 -->
                           <label class="label">Normal Hours Add $4</label>
                           <span class="underline"></span>
                       </div>
                       <div class="wrapper">
-                          <input id="sunHolOver" type="number" onchange="sunHolOvertimeSalary()" class="inputText mdc-typography--subheading2"><!-- item 10 -->
+                          <input id="sunHolOver" type="number" onchange="sunHolOvertimeSalary()" class="inputText mdc-typography--subheading2" required><!-- item 10 -->
                           <label class="label">Overtime Hours</label>
                           <span class="underline"></span>
                       </div>
                   </div>
                   </form>
                       <div class="receiptGroup mdc-typography--subheading2">
+                          <h1 class="mdc-typography--title">Reciept</h1>
                           <label>Employee Name</label>
                           <p id="printEmployeeName">Employee Name</p>
                           <label>No. of days worked</label>
