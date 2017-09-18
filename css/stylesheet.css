@@ -20,12 +20,12 @@ form {
     flex-direction: column;
 }
 .inputText {
+    position: relative;
     width: 200px;
     height: 35px;
     padding: 7px;
     border: none;
     background-color: white;
-    
 }  
 .label {
     padding-left: 7px;
@@ -52,30 +52,35 @@ form {
     font-size: 14px;
     font-weight: 500;
 }
-.inputText:valid + .label + span {
+.inputText:valid + .label + .underline {
     background: #303f9f;
     height: 2px;
-    width: 225px;
 }
-.inputText:hover + .label + span {
+.inputText:hover + .label + .underline {
     background: #303f9f;
     height: 2px;
-    width: 225px;
 }
-.inputText:focus + .label + span {
+.inputText:focus + .label + .underline {
     background: #303f9f;
     height: 2px;
-    width: 225px;
 }
-span {
+.underline {
     height: 2px;
     width: 200px;
     background-color: black;
-    display: block;
-    transition: all 0.2s ease-in-out;
+    display: inline;
+    transition: all 0.4s cubic-bezier(1, 0, 0, 1);
 }
-span:hover {
-    transform: translateY(50px;)
+.sideline {
+    position: absolute;
+    height: 30px;
+    width: 2px;
+    display: block;
+    background: black;
+    transition: all 0.4 cubic-bezier(1, 0, 0, 1);
+}
+.inputText:hover + .label + .sideline {
+    height: 0px;
 }
 p {
     border: 1px solid #cfcfcf;
