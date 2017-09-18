@@ -49,186 +49,22 @@
                     </div>
                     <br>
                   </div>
-                  <div class="group"> <!-- item 3 -->
-                      <div class="mdc-form-field">
-                      <div class="mdc-checkbox">
-                        <input type="checkbox"
-                               id="1"
-                               class="mdc-checkbox__native-control" onchange="daysWorked(1)"/>
-                        <div class="mdc-checkbox__background">
-                          <svg class="mdc-checkbox__checkmark"
-                               viewBox="0 0 24 24">
-                            <path class="mdc-checkbox__checkmark__path"
-                                  fill="none"
-                                  stroke="white"
-                                  d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
-                          </svg>
-                          <div class="mdc-checkbox__mixedmark"></div>
-                        </div>
-                      </div>
-
-                      <label for="my-checkbox">Monday</label>
-                    </div>
-                    <br>
-                    <div class="mdc-form-field">
-                      <div class="mdc-checkbox">
-                        <input type="checkbox"
-                               id="2"
-                               class="mdc-checkbox__native-control" onchange="daysWorked(2)"/>
-                        <div class="mdc-checkbox__background">
-                          <svg class="mdc-checkbox__checkmark"
-                               viewBox="0 0 24 24">
-                            <path class="mdc-checkbox__checkmark__path"
-                                  fill="none"
-                                  stroke="white"
-                                  d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
-                          </svg>
-                          <div class="mdc-checkbox__mixedmark"></div>
-                        </div>
-                      </div>
-
-                      <label for="my-checkbox">Tuesday</label>
-                    </div>
-                    <br>
-                    <div class="mdc-form-field">
-                      <div class="mdc-checkbox">
-                        <input type="checkbox"
-                               id="3"
-                               class="mdc-checkbox__native-control" onchange="daysWorked(3)"/>
-                        <div class="mdc-checkbox__background">
-                          <svg class="mdc-checkbox__checkmark"
-                               viewBox="0 0 24 24">
-                            <path class="mdc-checkbox__checkmark__path"
-                                  fill="none"
-                                  stroke="white"
-                                  d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
-                          </svg>
-                          <div class="mdc-checkbox__mixedmark"></div>
-                        </div>
-                      </div>
-
-                      <label for="my-checkbox">Wednesday</label>
-                    </div>
-                    <br>
-                    <div class="mdc-form-field">
-                      <div class="mdc-checkbox">
-                        <input type="checkbox"
-                               id="4"
-                               class="mdc-checkbox__native-control" onchange="daysWorked(4)"/>
-                        <div class="mdc-checkbox__background">
-                          <svg class="mdc-checkbox__checkmark"
-                               viewBox="0 0 24 24">
-                            <path class="mdc-checkbox__checkmark__path"
-                                  fill="none"
-                                  stroke="white"
-                                  d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
-                          </svg>
-                          <div class="mdc-checkbox__mixedmark"></div>
-                        </div>
-                      </div>
-
-                      <label for="my-checkbox">Thursday</label>
-                    </div>
-                    <br>
-                    <div class="mdc-form-field">
-                      <div class="mdc-checkbox">
-                        <input type="checkbox"
-                               id="5"
-                               class="mdc-checkbox__native-control" onchange="daysWorked(5)"/>
-                        <div class="mdc-checkbox__background">
-                          <svg class="mdc-checkbox__checkmark"
-                               viewBox="0 0 24 24">
-                            <path class="mdc-checkbox__checkmark__path"
-                                  fill="none"
-                                  stroke="white"
-                                  d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
-                          </svg>
-                          <div class="mdc-checkbox__mixedmark"></div>
-                        </div>
-                      </div>
-
-                      <label for="my-checkbox">Friday</label>
-                    </div>
-                    <br>
-                    <div class="mdc-form-field">
-                      <div class="mdc-checkbox">
-                        <input type="checkbox"
-                               id="6"
-                               class="mdc-checkbox__native-control" onchange="daysWorked(6)"/>
-                        <div class="mdc-checkbox__background">
-                          <svg class="mdc-checkbox__checkmark"
-                               viewBox="0 0 24 24">
-                            <path class="mdc-checkbox__checkmark__path"
-                                  fill="none"
-                                  stroke="white"
-                                  d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
-                          </svg>
-                          <div class="mdc-checkbox__mixedmark"></div>
-                        </div>
-                      </div>
-
-                      <label for="my-checkbox">Saturday</label>
-                    </div>
-                    <br>
-                    <div class="mdc-form-field">
-                      <div class="mdc-checkbox">
-                        <input type="checkbox"
-                               id="7"
-                               class="mdc-checkbox__native-control" onchange="daysWorked(7)"/>
-                        <div class="mdc-checkbox__background">
-                          <svg class="mdc-checkbox__checkmark"
-                               viewBox="0 0 24 24">
-                            <path class="mdc-checkbox__checkmark__path"
-                                  fill="none"
-                                  stroke="white"
-                                  d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
-                          </svg>
-                          <div class="mdc-checkbox__mixedmark"></div>
-                        </div>
-                      </div>
-
-                      <label for="my-checkbox">Sunday</label>
-                    </div>
-                  </div>
                   <div class="group">
-                      <label class="mdc-typography--title">Monday to Friday</label>
+                      <label class="mdc-typography--title">Normal Hours</label>
                       <br>
                       <div class="wrapper">
-                         <input id="normalHoursTotal" type="number" onchange="normalSalary()" max="9" class="inputText mdc-typography--subheading2" required>
+                         <input id="normalHoursTotal" type="number" onchange="normalSalary()" max="45" class="inputText mdc-typography--subheading2" required>
                          <label class="label">Normal Hours Worked</label>
                          <span class="underline"></span>
                       </div>
-                      <div class="wrapper">
-                         <input id="weekDayOvertime" type="number" onchange="weekDayOvertimeSalary()" max="3" class="inputText mdc-typography--subheading2" required>
-                         <label class="label">Overtime: Max 3</label>
-                         <span class="underline"></span>
-                      </div>
-                      <div class="wrapper">
-                          <input id="weekDayOvertime2" type="number" onchange="weekDayOvertimeSalary2()" min="4" class="inputText mdc-typography--subheading2" required>
-                          <label class="label">Overtime: Min 4</label>
-                          <span class="underline"></span>
-                      </div>
-                  </div>
-                  <div class="group"> <!-- item 8 -->
-                      <label class="mdc-typography--title">Saturday Hours (Extra $3 per hour): </label><br>
-                      <div class="wrapper">
-                          <input id="saturdayNormal" type="number" max="9" onchange="satSalary()" class="inputText mdc-typography--subheading2" required>
-                          <label class="label">Normal Hours: Max 9</label>
-                          <span class="underline"></span>
-                      </div>
                   </div>
                   <div class="group">
-                      <label class="mdc-typography--title">Sunday and Holiday</label>
-                      <br>
-                      <div class="wrapper">
-                          <input id="sunHolNormal" type="number" max="9" onchange="sunHolNormalPay()" class="inputText mdc-typography--subheading2" required><!-- item 9 -->
-                          <label class="label">Normal Hours Add $4</label>
-                          <span class="underline"></span>
-                      </div>
-                      <div class="wrapper">
-                          <input id="sunHolOver" type="number" onchange="sunHolOvertimeSalary()" class="inputText mdc-typography--subheading2" required><!-- item 10 -->
-                          <label class="label">Overtime Hours</label>
-                          <span class="underline"></span>
+                        <label class="mdc-typography--title">Overtime Hours</label>
+                        <br>
+                        <div class="wrapper">
+                         <input id="overTimeHours" type="number" onchange="overTimePay()" class="inputText mdc-typography--subheading2" required>
+                         <label class="label">Overtime Hours Worked</label>
+                         <span class="underline"></span>
                       </div>
                   </div>
                   </form>
@@ -236,24 +72,14 @@
                           <h1 class="mdc-typography--title">Reciept</h1>
                           <label>Employee Name</label>
                           <p id="printEmployeeName">Employee Name</p>
-                          <label>No. of days worked</label>
-                          <p id="totalDaysWorked">0</p> <!-- item 4 -->
-                          <label>Weekday Normal Pay</label>
+                          <label>Normal Pay</label>
                           <p id="normalPay">0</p> <!-- item 5 -->
-                          <label>Weekday Overtime Pay</label>
-                          <p id="weekDayOvertimePay">0</p> <!-- item 6 -->
-                          <p id="weekDayOvertimePay2">0</p> <!-- item 7 -->
-                          <label>Saturday Pay</label>
-                          <p id="satPay">0</p>
-                          <label>Sunday and Holiday Normal Pay</label>
-                          <p id="sunHolNormalPay">0</p>
-                          <label>Sunday and Holiday Overtime Pay</label>
-                          <p id="sunHolOvertimePay">0</p>
+                          <label>Overtime Pay</label>
+                          <p id="overTimePay">0</p> <!-- item 6 -->
                           <br>
                           <label>Total Wage</label>
                           <p id="totalWage">0</p>
                       </div>
         <script src="wage.js"></script>
-        <script src="Animation.js"></script>
     </body>
 </html>

@@ -30,9 +30,15 @@ form {
 .label {
     padding-left: 7px;
     order: -1;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s cubic-bezier(1, 0, 0, 1);
     transform: translateY(29px);
     pointer-events: none;
+}
+.inputText:hover + .label {
+    transform: translateY(-2px);
+    color: #303f9f;
+    font-size: 14px;
+    font-weight: 500;
 }
 .inputText:focus + .label {
     transform: translateY(-2px);
@@ -47,6 +53,11 @@ form {
     font-weight: 500;
 }
 .inputText:valid + .label + span {
+    background: #303f9f;
+    height: 2px;
+    width: 225px;
+}
+.inputText:hover + .label + span {
     background: #303f9f;
     height: 2px;
     width: 225px;
