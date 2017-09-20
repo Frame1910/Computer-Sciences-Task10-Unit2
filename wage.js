@@ -11,10 +11,14 @@ function manager() {
 var normalPay = 0;
 var normalHours = 0;
 function normalSalary() {
-    console.log(payRate);
+    if (document.getElementById("normalHoursTotal").value < 46) {
+        console.log(payRate);
     var normalHours = document.getElementById("normalHoursTotal").value;
     window.normalPay = normalHours * payRate;
     document.getElementById("normalPay").innerHTML = "$" + normalPay;
+    } else {
+        alert("Invalid Number, must be under 45 hours.")
+    } 
 }
 
 var overTime = 0;

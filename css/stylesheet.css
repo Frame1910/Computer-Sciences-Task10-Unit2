@@ -21,24 +21,28 @@ form {
 }
 .inputText {
     position: relative;
-    width: 200px;
+    width: 250px;
     height: 35px;
-    padding: 7px;
+    padding: 10px;
     border: none;
     background-color: white;
+    /*
+    border-bottom: 2px solid black;
+    transition: all 0.3s cubic-bezier(1, 0, 0, 1); */
 }  
+/*.inputText:hover, .inputText:valid, .inputText:focus {
+    border-bottom: 0px solid transparent;
+} */
 .label {
     padding-left: 7px;
     order: -1;
-    transition: all 0.4s cubic-bezier(1, 0, 0, 1);
+    transition: all 0.3s cubic-bezier(1, 0, 0, 1);
     transform: translateY(29px);
     pointer-events: none;
+    font-weight: 300;
 }
 .inputText:hover + .label {
-    transform: translateY(-2px);
     color: #303f9f;
-    font-size: 14px;
-    font-weight: 500;
 }
 .inputText:focus + .label {
     transform: translateY(-2px);
@@ -54,19 +58,19 @@ form {
 }
 .inputText:valid + .label + .underline {
     background: #303f9f;
-    height: 2px;
+    width: 220px;
 }
 .inputText:hover + .label + .underline {
     background: #303f9f;
-    height: 2px;
+    width: 220px;
 }
 .inputText:focus + .label + .underline {
     background: #303f9f;
-    height: 2px;
+    width: 220px;
 }
 .underline {
     height: 2px;
-    width: 200px;
+    width: 0px;
     background-color: black;
     display: inline;
     transition: all 0.4s cubic-bezier(1, 0, 0, 1);
